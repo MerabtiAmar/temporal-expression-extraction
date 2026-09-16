@@ -1,0 +1,307 @@
+
+================================================================================
+🚀 TRAITEMENT : 17_AlgerianWar
+================================================================================
+📂 Lecture de 17_AlgerianWar...
+✅ 130 entités de référence chargées.
+
+🤖 Démarrage de HeidelTime...
+déc. 31, 2025 8:37:31 PM de.unihd.dbs.heideltime.standalone.HeidelTimeStandalone initialize
+INFO: HeidelTimeStandalone initialized with language english
+déc. 31, 2025 8:37:31 PM de.unihd.dbs.heideltime.standalone.HeidelTimeStandalone readConfigFile
+INFO: trying to read in file config.props
+Dec 31, 2025 8:37:33 PM de.unihd.dbs.heideltime.standalone.HeidelTimeStandalone initialize
+INFO: HeidelTime initialized
+Dec 31, 2025 8:37:33 PM de.unihd.dbs.heideltime.standalone.HeidelTimeStandalone initialize
+INFO: JCas factory initialized
+Dec 31, 2025 8:37:33 PM de.unihd.dbs.heideltime.standalone.HeidelTimeStandalone process
+INFO: Processing started
+Dec 31, 2025 8:37:33 PM de.unihd.dbs.heideltime.standalone.HeidelTimeStandalone establishPartOfSpeechInformation
+INFO: Be aware that you use the AllLanguagesTokenizer instead of specific preprocessing for the selected language. If proper preprocessing for the specified language (.english) is available, this might results in better temporal tagging quality.
+Dec 31, 2025 8:37:36 PM de.unihd.dbs.heideltime.standalone.HeidelTimeStandalone process
+INFO: Processing finished
+Dec 31, 2025 8:37:37 PM de.unihd.dbs.heideltime.standalone.HeidelTimeStandalone process
+INFO: Result formatted
+✅ 105 entités extraites par HeidelTime.
+
+📊 ÉVALUATION 1 : DÉTECTION D'ENTITÉS
+============================================================
+🎯 Vrais Positifs (Trouvés) : 106
+❌ Faux Positifs (Inventés) : 0
+📉 Faux Négatifs (Oubliés)  : 24
+------------------------------------------------------------
+🏆 PRÉCISION : 100.00%
+🏆 RAPPEL    : 81.54%
+🏆 F1-SCORE  : 89.83%
+============================================================
+
+📊 ÉVALUATION 2 : CLASSIFICATION DES TYPES
+============================================================
+🎯 Types Corrects : 75
+❌ Types Incorrects : 10
+📉 Entités Non Détectées : 20
+------------------------------------------------------------
+🏆 PRÉCISION (Type) : 88.24%
+🏆 RAPPEL (Type)    : 78.95%
+🏆 F1-SCORE (Type)  : 83.33%
+============================================================
+
+📋 Exemples d'erreurs de classification:
+  • 'the three years (1957-60) during which the regroup...' : DATE (prédit) vs DURATION (gold)
+  • 'four days after the vote' : DURATION (prédit) vs DATE (gold)
+  • 'fifteen hours before the projected launch of resur...' : DURATION (prédit) vs DATE (gold)
+  • 'the 1980s' : DATE (prédit) vs UNKNOWN (gold)
+  • 'the last years of his life' : DATE (prédit) vs DURATION (gold)
+
+
+💾 Sauvegarde dans la base unifiée : projet_heideltime_unifie.db
+📊 Table : 17_AlgerianWar
+✅ 210 entités insérées dans la table '17_AlgerianWar'
+
+📋 Aperçu:
+  ID: 1 | Texte: November 1, 1954 | Type: DATE | Valeur: 1954-11-01TMO
+  ID: 2 | Texte: a few months | Type: DURATION | Valeur: XXXX-XX
+  ID: 3 | Texte: five years | Type: DURATION | Valeur: P5Y
+  ID: 4 | Texte: November 12 | Type: DATE | Valeur: 1954-11-12
+  ID: 5 | Texte: May 8, 1945 | Type: DATE | Valeur: 1945-05-08
+
+================================================================================
+✅ TRAITEMENT TERMINÉ : 17_AlgerianWar
+================================================================================
+
+================================================================================
+🚀 TRAITEMENT : 01_WW2
+================================================================================
+📂 Lecture de 01_WW2...
+✅ 170 entités de référence chargées.
+
+🤖 Démarrage de HeidelTime...
+Dec 31, 2025 8:37:38 PM de.unihd.dbs.heideltime.standalone.HeidelTimeStandalone initialize
+INFO: HeidelTimeStandalone initialized with language english
+Dec 31, 2025 8:37:38 PM de.unihd.dbs.heideltime.standalone.HeidelTimeStandalone initialize
+INFO: HeidelTime initialized
+Dec 31, 2025 8:37:38 PM de.unihd.dbs.heideltime.standalone.HeidelTimeStandalone initialize
+INFO: JCas factory initialized
+Dec 31, 2025 8:37:38 PM de.unihd.dbs.heideltime.standalone.HeidelTimeStandalone process
+INFO: Processing started
+Dec 31, 2025 8:37:38 PM de.unihd.dbs.heideltime.standalone.HeidelTimeStandalone establishPartOfSpeechInformation
+INFO: Be aware that you use the AllLanguagesTokenizer instead of specific preprocessing for the selected language. If proper preprocessing for the specified language (.english) is available, this might results in better temporal tagging quality.
+Dec 31, 2025 8:37:45 PM de.unihd.dbs.heideltime.standalone.HeidelTimeStandalone process
+INFO: Processing finished
+Dec 31, 2025 8:37:47 PM de.unihd.dbs.heideltime.standalone.HeidelTimeStandalone process
+INFO: Result formatted
+✅ 157 entités extraites par HeidelTime.
+
+📊 ÉVALUATION 1 : DÉTECTION D'ENTITÉS
+============================================================
+🎯 Vrais Positifs (Trouvés) : 158
+❌ Faux Positifs (Inventés) : 0
+📉 Faux Négatifs (Oubliés)  : 12
+------------------------------------------------------------
+🏆 PRÉCISION : 100.00%
+🏆 RAPPEL    : 92.94%
+🏆 F1-SCORE  : 96.34%
+============================================================
+
+📊 ÉVALUATION 2 : CLASSIFICATION DES TYPES
+============================================================
+🎯 Types Corrects : 122
+❌ Types Incorrects : 5
+📉 Entités Non Détectées : 9
+------------------------------------------------------------
+🏆 PRÉCISION (Type) : 96.06%
+🏆 RAPPEL (Type)    : 93.13%
+🏆 F1-SCORE (Type)  : 94.57%
+============================================================
+
+📋 Exemples d'erreurs de classification:
+  • 'a few months later' : DURATION (prédit) vs UNKNOWN (gold)
+  • 'days' : DATE (prédit) vs DURATION (gold)
+  • 'a few days later' : DURATION (prédit) vs UNKNOWN (gold)
+  • 'winter' : DATE (prédit) vs SET (gold)
+  • 'now' : DATE (prédit) vs DURATION (gold)
+
+
+💾 Sauvegarde dans la base unifiée : projet_heideltime_unifie.db
+📊 Table : 01_WW2
+✅ 157 entités insérées dans la table '01_WW2'
+
+📋 Aperçu:
+  ID: 1 | Texte: September 1, 1939 | Type: DATE | Valeur: 1939-09-01
+  ID: 2 | Texte: 1939 | Type: DATE | Valeur: 1939-09-01
+  ID: 3 | Texte: September 17, 1939 | Type: DATE | Valeur: 1939
+  ID: 4 | Texte: early October | Type: DATE | Valeur: 1939-10
+  ID: 5 | Texte: late September | Type: DATE | Valeur: 1939-09
+
+================================================================================
+✅ TRAITEMENT TERMINÉ : 01_WW2
+================================================================================
+
+================================================================================
+🚀 TRAITEMENT : 02_WW1
+================================================================================
+📂 Lecture de 02_WW1...
+✅ 265 entités de référence chargées.
+
+🤖 Démarrage de HeidelTime...
+Dec 31, 2025 8:37:49 PM de.unihd.dbs.heideltime.standalone.HeidelTimeStandalone initialize
+INFO: HeidelTimeStandalone initialized with language english
+Dec 31, 2025 8:37:49 PM de.unihd.dbs.heideltime.standalone.HeidelTimeStandalone initialize
+INFO: HeidelTime initialized
+Dec 31, 2025 8:37:49 PM de.unihd.dbs.heideltime.standalone.HeidelTimeStandalone initialize
+INFO: JCas factory initialized
+Dec 31, 2025 8:37:49 PM de.unihd.dbs.heideltime.standalone.HeidelTimeStandalone process
+INFO: Processing started
+Dec 31, 2025 8:37:49 PM de.unihd.dbs.heideltime.standalone.HeidelTimeStandalone establishPartOfSpeechInformation
+INFO: Be aware that you use the AllLanguagesTokenizer instead of specific preprocessing for the selected language. If proper preprocessing for the specified language (.english) is available, this might results in better temporal tagging quality.
+Dec 31, 2025 8:37:54 PM de.unihd.dbs.heideltime.standalone.HeidelTimeStandalone process
+INFO: Processing finished
+Dec 31, 2025 8:37:55 PM de.unihd.dbs.heideltime.standalone.HeidelTimeStandalone process
+INFO: Result formatted
+✅ 230 entités extraites par HeidelTime.
+
+📊 ÉVALUATION 1 : DÉTECTION D'ENTITÉS
+============================================================
+🎯 Vrais Positifs (Trouvés) : 228
+❌ Faux Positifs (Inventés) : 0
+📉 Faux Négatifs (Oubliés)  : 37
+------------------------------------------------------------
+🏆 PRÉCISION : 100.00%
+🏆 RAPPEL    : 86.04%
+🏆 F1-SCORE  : 92.49%
+============================================================
+
+📊 ÉVALUATION 2 : CLASSIFICATION DES TYPES
+============================================================
+🎯 Types Corrects : 155
+❌ Types Incorrects : 14
+📉 Entités Non Détectées : 34
+------------------------------------------------------------
+🏆 PRÉCISION (Type) : 91.72%
+🏆 RAPPEL (Type)    : 82.01%
+🏆 F1-SCORE (Type)  : 86.59%
+============================================================
+
+📋 Exemples d'erreurs de classification:
+  • 'nearly four weeks of fighting since 8 august' : DATE (prédit) vs DURATION (gold)
+  • 'a day later' : DURATION (prédit) vs DATE (gold)
+  • 'the 1870s' : DATE (prédit) vs UNKNOWN (gold)
+  • 'the last days of this battle' : DATE (prédit) vs DURATION (gold)
+  • 'the following week' : DATE (prédit) vs DURATION (gold)
+
+
+💾 Sauvegarde dans la base unifiée : projet_heideltime_unifie.db
+📊 Table : 02_WW1
+✅ 230 entités insérées dans la table '02_WW1'
+
+📋 Aperçu:
+  ID: 1 | Texte: 1914 | Type: DATE | Valeur: 1914
+  ID: 2 | Texte: 9 September 1914 | Type: DATE | Valeur: 1914-09-09
+  ID: 3 | Texte: 7 August | Type: DATE | Valeur: 1914-08-07
+  ID: 4 | Texte: 10 August | Type: DATE | Valeur: 1914-08-10
+  ID: 5 | Texte: two weeks | Type: DURATION | Valeur: P2W
+
+================================================================================
+✅ TRAITEMENT TERMINÉ : 02_WW1
+================================================================================
+
+================================================================================
+🚀 TRAITEMENT : 08_FrenchRev
+================================================================================
+📂 Lecture de 08_FrenchRev...
+✅ 175 entités de référence chargées.
+
+🤖 Démarrage de HeidelTime...
+Dec 31, 2025 8:37:57 PM de.unihd.dbs.heideltime.standalone.HeidelTimeStandalone initialize
+INFO: HeidelTimeStandalone initialized with language english
+Dec 31, 2025 8:37:57 PM de.unihd.dbs.heideltime.standalone.HeidelTimeStandalone initialize
+INFO: HeidelTime initialized
+Dec 31, 2025 8:37:57 PM de.unihd.dbs.heideltime.standalone.HeidelTimeStandalone initialize
+INFO: JCas factory initialized
+Dec 31, 2025 8:37:57 PM de.unihd.dbs.heideltime.standalone.HeidelTimeStandalone process
+INFO: Processing started
+Dec 31, 2025 8:37:57 PM de.unihd.dbs.heideltime.standalone.HeidelTimeStandalone establishPartOfSpeechInformation
+INFO: Be aware that you use the AllLanguagesTokenizer instead of specific preprocessing for the selected language. If proper preprocessing for the specified language (.english) is available, this might results in better temporal tagging quality.
+Dec 31, 2025 8:38:01 PM de.unihd.dbs.heideltime.standalone.HeidelTimeStandalone process
+INFO: Processing finished
+Dec 31, 2025 8:38:01 PM de.unihd.dbs.heideltime.standalone.HeidelTimeStandalone process
+INFO: Result formatted
+✅ 143 entités extraites par HeidelTime.
+
+📊 ÉVALUATION 1 : DÉTECTION D'ENTITÉS
+============================================================
+🎯 Vrais Positifs (Trouvés) : 141
+❌ Faux Positifs (Inventés) : 1
+📉 Faux Négatifs (Oubliés)  : 34
+------------------------------------------------------------
+🏆 PRÉCISION : 99.30%
+🏆 RAPPEL    : 80.57%
+🏆 F1-SCORE  : 88.96%
+============================================================
+
+📊 ÉVALUATION 2 : CLASSIFICATION DES TYPES
+============================================================
+🎯 Types Corrects : 103
+❌ Types Incorrects : 9
+📉 Entités Non Détectées : 29
+------------------------------------------------------------
+🏆 PRÉCISION (Type) : 91.96%
+🏆 RAPPEL (Type)    : 78.03%
+🏆 F1-SCORE (Type)  : 84.43%
+============================================================
+
+📋 Exemples d'erreurs de classification:
+  • 'a year' : DATE (prédit) vs DURATION (gold)
+  • 'the years 1751-1777' : DATE (prédit) vs DURATION (gold)
+  • 'the night of 10 august 1792' : DATE (prédit) vs TIME (gold)
+  • 'two days' : DURATION (prédit) vs UNKNOWN (gold)
+  • 'one day' : DURATION (prédit) vs SET (gold)
+
+
+💾 Sauvegarde dans la base unifiée : projet_heideltime_unifie.db
+📊 Table : 08_FrenchRev
+✅ 143 entités insérées dans la table '08_FrenchRev'
+
+📋 Aperçu:
+  ID: 1 | Texte: the Seven Years | Type: DURATION | Valeur: P7Y
+  ID: 2 | Texte: May 1776 | Type: DATE | Valeur: 1776-05
+  ID: 3 | Texte: The next year | Type: DATE | Valeur: 1777
+  ID: 4 | Texte: May 1789 | Type: DATE | Valeur: 1789-05
+  ID: 5 | Texte: 1789 | Type: DATE | Valeur: 1789-05
+
+================================================================================
+✅ TRAITEMENT TERMINÉ : 08_FrenchRev
+================================================================================
+
+================================================================================
+📊 RÉSUMÉ GLOBAL DES RÉSULTATS
+================================================================================
+Fichier                  Det_Prec   Det_Recall       Det_F1     Clf_Prec   Clf_Recall       Clf_F1
+--------------------------------------------------------------------------------
+17_AlgerianWar            100.00%       81.54%       89.83%       88.24%       78.95%       83.33%
+01_WW2                    100.00%       92.94%       96.34%       96.06%       93.13%       94.57%
+02_WW1                    100.00%       86.04%       92.49%       91.72%       82.01%       86.59%
+08_FrenchRev               99.30%       80.57%       88.96%       91.96%       78.03%       84.43%
+
+📊 Moyennes globales:
+  Détection    - Précision: 99.82%, Rappel: 85.27%, F1: 91.91%
+  Classification - Précision: 91.99%, Rappel: 83.03%, F1: 87.23%
+
+📊 CONTENU DE LA BASE UNIFIÉE : projet_heideltime_unifie.db
+================================================================================
+Nombre de tables : 5
+
+Tables disponibles :
+  • 17_AlgerianWar : 210 entités
+  • sqlite_sequence : 4 entités
+  • 01_WW2 : 157 entités
+  • 02_WW1 : 230 entités
+  • 08_FrenchRev : 143 entités
+
+================================================================================
+
+================================================================================
+✅ PIPELINE COMPLET TERMINÉ AVEC SUCCÈS
+================================================================================
+
+Process finished with exit code 0

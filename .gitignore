@@ -1,0 +1,15 @@
+# Corpus et sorties régénérées
+data/
+*.db
+*.csv
+*.sgm
+*.key.xml
+*.tml
+
+# Dépendances Java téléchargées
+*.jar
+out/
+
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
