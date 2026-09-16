@@ -81,4 +81,4 @@ Code distribué sous [licence MIT](LICENSE). Les corpus (WikiWars, MTSamples, Sy
 
 ## Auteurs
 
-**Amar Merabti** et **Lynda Hammouche** — Master 2 DCI, Université Paris Cité.
+**Amar Merabti** — Master 2 DCI, Université Paris Cité.
